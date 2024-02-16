@@ -1,0 +1,82 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    color: black
+}
+
+header {
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 30%;
+}
+
+header h1 {
+   font-size: 48px;
+}
+
+header nav {
+   padding-top: 30px;
+   float:right;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 25px;
+   color: whitesmoke;
+    
+}
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-left: 25px;
+    box-sizing: inherit;
+    vertical-align: middle;
+}
+
+main img {
+    position: center;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    display: flex;
+    flex-direction:column;
+    /* margin-left: 30%; */
+    padding-left: 30%;
+}
+
+.name {
+  position: absolute;
+  z-index: 2;
+  font-size: 100px;
+}
+
+.About-Me {
+float: left;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: auto;
+}
