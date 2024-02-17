@@ -2,81 +2,131 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
 }
 
 body {
     background-color: whitesmoke;
-    display: flex;
-    color: black
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    /* display: flex; */
+    width: 100%;
 }
 
-header {
+nav {
     padding: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
     background-color: goldenrod;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    /* flex-direction: column;
+    align-items: start; */
+    /* Learned this during tutoring session - aligning items from left to right and top to bottom */
     position:fixed;
+    text-align: center;
     top: 0%;
     left: 0%;
     height: 100%;
-    width: 30%;
+    width: 25%; 
+    z-index: 100  
 }
 
-header h1 {
-   font-size: 48px;
-}
-
-header nav {
-   padding-top: 30px;
-   float:right;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   font-size: 25px;
-   color: whitesmoke;
+.sidebar-nav {
+    margin: 0;
+    padding: 15px;
     
 }
-header nav ul {
+
+nav a {
+    /* display: block; */
+    padding: 15px;
+    text-decoration: none;
+    /* writing-mode:vertical-lr;
+    white-space: nowrap; */
+    justify-content:center;
+    display: list-item;
     list-style-type: none;
+    color: black;
+
 }
 
-header nav ul li {
-    margin-left: 25px;
-    box-sizing: inherit;
+/* .sidebar-nav {
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    list-style-type:none;
     vertical-align: middle;
-}
-
-main img {
-    position: center;
-    width: 100%;
-    z-index: 1;
-}
+    white-space:nowrap;
+    text-align: justify;
+    box-sizing:inherit;
+    margin-left: 0px;
+    float: right;
+} */
+/* I just want to comment on how many times I went back and forth with the positioning, displays, lists, how to place the text in the way I wanted - I am literally typing this at 5am after being up for almost 24 hours. It needed to be fixed. The element that finally fixed the positioning of the text in the navigation bar was "display:list-item" */
 
 main {
-    display: flex;
-    flex-direction:column;
-    /* margin-left: 30%; */
-    padding-left: 30%;
+    display: block;
+    /* flex-direction:column; */
+    margin-right: 30%;
+    /* padding-left: 30%; */
+    /* z-index: 100 */
+    /* width: 100vh; */
 }
 
-.name {
-  position: absolute;
-  z-index: 2;
-  font-size: 100px;
+/* section {
+    margin-left: 30%;
+    text-align: center;
+
+}  */
+
+main section img {
+    position: absolute;
+    width:100%;
+    /* height: 100%; */
+    z-index: 2;
 }
+
+/* .center-image {
+    background-image: url(./2FEE48C8-8869-480A-A5DB-7E1A5E20402A.JPEG);
+    display:flex;
+    position: absolute;
+    /* background-position: center; */
+    /* z-index: index 1;
+} */ 
+
+#Adjoa {
+  position: absolute;
+  /* z-index: 1; */
+  font-size: 50px;
+  left: 500px;
+  margin: -10px;
+}
+
+/* p .aspire {
+    position:absolute;
+    left: 15px;
+    z-index: 2;
+    font-size: medium;
+} */
 
 .About-Me {
-float: left;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 20%;
+    font-size: 40px;
 
 }
 
+/* section .About-Me h1 {
+    font-size: 60px;
+    padding-left: 50%;
+}
 
-footer {
+section h2 {
+    font-size: 60px;
+}  */
+
+#footer {
     text-align: center;
     padding: 30px;
+    bottom: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-bottom: auto;
-}
+    position: absolute;
+    /* clear: both; */
+} 
