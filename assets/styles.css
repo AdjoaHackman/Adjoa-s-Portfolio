@@ -76,14 +76,15 @@ main {
 #Adjoa_header {
     position:absolute;
     color: black;
-    font-size: 75px;
+    font-size: 50px;
+    text-align: center;
 }
 
 #Adjoa_image {
     background-image: url("./2FEE48C8-8869-480A-A5DB-7E1A5E20402A.JPEG");
     width: 100%;
     height: auto;
-    aspect-ratio: 1838/2499;
+    aspect-ratio: 1838/2499; 
     background-size: cover;
 }
 
@@ -123,13 +124,36 @@ main {
     font-size: medium;
 } */
 
-.About-Me {
+#About-Me {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 20%;
-    font-size: 40px;
-
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 2%;
+    margin-left: 2%;
 }
 
+#My-Projects {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 2%;
+    text-align: center;
+    
+}
+
+section caption {
+    text-align: left;
+    position: relative;
+}
+/* .grid-images {
+    display: table;
+    grid-template-columns:auto auto;
+    justify-content: space-evenly;
+    align-content:start;
+    --num-cols:2;
+    
+    
+} */
 /* section .About-Me h1 {
     font-size: 60px;
     padding-left: 50%;
@@ -139,12 +163,25 @@ section h2 {
     font-size: 60px;
 }  */
 
+.grid-images {
+    margin-left: 2%;
+    margin-right: 2%;
+    display:flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    /* grid-template-columns:auto auto;
+    column-gap: 20px; */
+    width: 50%;
+    height: 50%;
+    
+}
 #footer {
     text-align: center;
-    padding: 30px;
+    /* padding: 30px; */
     bottom: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-bottom: auto;
-    position: absolute;
+    position: relative;
+    color: chocolate;
     /* clear: both; */
 } 
