@@ -19,7 +19,7 @@ nav {
     background-color: goldenrod;
     /* flex-direction: column;
     align-items: start; */
-    /* Learned this during tutoring session - aligning items from left to right and top to bottom */
+    /* Learned this during a tutoring session - aligning items from left to right and top to bottom */
     position:fixed;
     text-align: center;
     top: 0%;
@@ -28,6 +28,7 @@ nav {
     width: 25%; 
     z-index: 100  
 }
+/* I added the z-index because this is something a co-worker taught me. I asked how to put my name and the aspiring developer in on top of the image of myself.  */
 
 .sidebar-nav {
     margin: 0;
@@ -37,7 +38,7 @@ nav {
 
 nav a {
     /* display: block; */
-    padding: 15px;
+    padding: 55px;
     text-decoration: none;
     /* writing-mode:vertical-lr;
     white-space: nowrap; */
@@ -68,8 +69,8 @@ main {
     align-items: center; 
     /* we changed this the flex direction to colummn and aligning items in center because we want to view the image I will add horizontilly  */
     /* padding-left: 30%; */
-    /* z-index: 100 */
-    width: 100%;
+    /* z-index: 100*/
+    max-width:75vw;
     position: relative;
 }
 
@@ -82,7 +83,7 @@ main {
 
 #Adjoa_image {
     background-image: url("./2FEE48C8-8869-480A-A5DB-7E1A5E20402A.JPEG");
-    width: 100%;
+    width: 75vw;
     height: auto;
     aspect-ratio: 1838/2499; 
     background-size: cover;
@@ -124,12 +125,25 @@ main {
     font-size: medium;
 } */
 
-#About-Me {
+#About_Me {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 100%;
     font-size: 25px;
     margin-bottom: 2%;
     margin-left: 2%;
+}
+
+/* main section h1 p {
+    font-size: 20px;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    width: 100%;
+    padding: 3%;
+} */
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 #My-Projects {
@@ -138,13 +152,42 @@ main {
     font-size: 20px;
     margin-bottom: 2%;
     text-align: center;
-    
 }
 
-section caption {
+#main-projects {
+    max-width: 75vw;
+    display: flex;
+}
+
+#Horiseon {
+    max-width: 60%;
+}
+
+#linkedin-skills {
+    max-width: 40%;
+}
+
+#linkedin-skills img {
+    width: 100%;
+    height: auto;
+}
+
+#other-projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.other-projects {
+    width: 48%;
+    height: auto;
+}
+
+/* section p {
     text-align: left;
     position: relative;
-}
+} */
+
 /* .grid-images {
     display: table;
     grid-template-columns:auto auto;
@@ -163,18 +206,32 @@ section h2 {
     font-size: 60px;
 }  */
 
-.grid-images {
+/* .grid-images {
     margin-left: 2%;
     margin-right: 2%;
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-between;
-    /* grid-template-columns:auto auto;
-    column-gap: 20px; */
-    width: 50%;
-    height: 50%;
-    
+    grid-template-columns:auto auto;
+    column-gap: 20px;
+    width: 100%;
+    height: .5%;
 }
+
+#linkedin-skills {
+    float: right;
+} */
+
+#Contact-Me {
+    display: flex;
+    margin-left: 2%;
+    /* margin-bottom: 50%; */
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #footer {
     text-align: center;
     /* padding: 30px; */
