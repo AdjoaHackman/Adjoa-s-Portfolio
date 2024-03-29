@@ -6,48 +6,72 @@
 
 body {
     background-color: whitesmoke;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Spline Sans Mono", monospace !important;
     color: black;
-    display: flex;
+    /* display: inline-grid; */
+    /* place-items: center; */
     /* want to make the whole page horizontal so adding display flex to the body selector */
-    width: 100%;
+    /* width: 100%; */
 }
 
 nav {
+    font-size: large !important;
+    font-weight: bold !important;
+    padding-top:10px
+}
+.container {
+    padding: 25px;
+}
+img {
+    border-radius: 50%;
+    width: 50%;
+    height:50%;
+}
+
+/* aside {
+
+} */
+
+.Intro {
+    text-align: center;
+    align-content: center;
+    font-size: x-large;
+}
+/* nav {
     padding: 20px;
     font-size: 45px;
     background-color: goldenrod;
-    /* flex-direction: column;
-    align-items: start; */
+    flex-direction: column;
+    align-items: start;
     /* Learned this during a tutoring session - aligning items from left to right and top to bottom */
-    position:fixed;
+    /* position:fixed;
     text-align: center;
     top: 0%;
     left: 0%;
     height: 100%;
     width: 25%; 
     z-index: 100  
-}
+} */ 
 /* I added the z-index because this is something a co-worker taught me. I asked how to put my name and the aspiring developer in on top of the image of myself.  */
 
-.sidebar-nav {
+/* .sidebar-nav {
     margin: 0;
     padding: 15px;
     
-}
+} */
 
-nav a {
-    /* display: block; */
+/* nav a {
+    display: block;
     padding: 55px;
     text-decoration: none;
-    /* writing-mode:vertical-lr;
-    white-space: nowrap; */
+    writing-mode:vertical-lr;
+    white-space: nowrap;
     justify-content:center;
     display: list-item;
     list-style-type: none;
     color: black;
 
-}
+} */
 
 /* .sidebar-nav {
     font-size: 35px;
@@ -63,31 +87,31 @@ nav a {
 /* I just want to comment on how many times I went back and forth with the positioning, displays, lists, how to place the text in the way I wanted - I am literally typing this at 5am after being up for almost 24 hours. It needed to be fixed. The element that finally fixed the positioning of the text in the navigation bar was "display:list-item" */
 
 main {
-    display: flex;
+    /* display: flex;
     flex-direction:column;
     margin-left: 25%;
-    align-items: center; 
+    align-items: center;  */
     /* we changed this the flex direction to colummn and aligning items in center because we want to view the image I will add horizontilly  */
     /* padding-left: 30%; */
     /* z-index: 100*/
-    max-width:75vw;
-    position: relative;
+    /* max-width:75vw;
+    position: relative; */
 }
 
-#Adjoa_header {
+/* #Adjoa_header {
     position:absolute;
     color: black;
     font-size: 50px;
     text-align: center;
-}
+} */
 
-#Adjoa_image {
+/* #Adjoa_image {
     background-image: url("./2FEE48C8-8869-480A-A5DB-7E1A5E20402A.JPEG");
     width: 75vw;
     height: auto;
     aspect-ratio: 1838/2499; 
     background-size: cover;
-}
+} */
 
 /* section {
     margin-left: 30%;
@@ -125,13 +149,13 @@ main {
     font-size: medium;
 } */
 
-#About_Me {
+/* #About_Me {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 100%;
     font-size: 25px;
     margin-bottom: 2%;
     margin-left: 2%;
-}
+} */
 
 /* main section h1 p {
     font-size: 20px;
@@ -222,23 +246,3 @@ section h2 {
 #linkedin-skills {
     float: right;
 } */
-
-#Contact-Me {
-    display: flex;
-    margin-left: 2%;
-    /* margin-bottom: 50%; */
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#footer {
-    text-align: center;
-    /* padding: 30px; */
-    bottom: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: auto;
-    position: relative;
-    color: chocolate;
-    /* clear: both; */
-} 
